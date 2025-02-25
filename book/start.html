@@ -73,32 +73,15 @@
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8">
             <p class="lead">Choose your favourite way to talk below, and we'll find a date/time that works for both of us.</p>
-            <ul class="list-unstyled">
-                  <li class=" mb-3">
-                      <div class="subheading mb-3">
-                          <a href="/book/zoom">
-                              <i class="fas fa-lg fa-video mr-2"></i>
-                              I use Zoom ‘cos I'm cool AF...
-                          </a>
-                      </div>
-                  </li>
-                  <li class=" mb-3">
-                      <div class="subheading mb-3">
-                          <a href="/book/skype">
-                              <i class="fab fa-lg fa-skype mr-2"></i>
-                              I use Skype ‘cos I'm old school...
-                          </a>
-                      </div>
-                  </li>
-                  <li class=" mb-3">
-                      <div class="subheading mb-3">
-                          <a href="/book/phone">
-                              <i class="fas fa-lg fa-phone-square-alt mr-2"></i>
-                              I use the telephone ‘cos I'm not a nerd...
-                          </a>
-                      </div>
-                  </li>
-              </ul>
+            <div id="booking-page">
+              <!-- this is where we will inject the interface -->
+            </div>
+            <script>window.SavvyCal=window.SavvyCal||function(){(SavvyCal.q=SavvyCal.q||[]).push(arguments)};</script>
+            <script async src="https://embed.savvycal.com/v1/embed.js"></script>
+            <script>
+              SavvyCal('init');
+              SavvyCal('inline', { link: 'chatwithal/book', selector: '#booking-page' });
+            </script>
           </div>
         </div>
       </div>
@@ -126,4 +109,3 @@
 </body>
 
 </html>
-
